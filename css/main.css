@@ -25,6 +25,7 @@ h1 {
   line-height: 30px;
   /* or 83% */
   letter-spacing: 0.1em;
+
 }
 
 h2 {
@@ -104,7 +105,7 @@ main {
 }
 
 section {
-  padding: 10px;
+  padding: 15px 45px 15px 45px;
 }
 
 form {
@@ -175,11 +176,13 @@ footer > p {
   color: #5D4696 ;
 }
 
-.the-work > button {
-  background-color: #FFFFFF ;
+
+.the-work > a button {
+  background-color: #5D4696 ;
   border: 1px solid #5D4696;
-  color: #5D4696;
+  color: #FFFFFF;
 }
+
 
 
 
@@ -190,9 +193,9 @@ footer > p {
   flex-direction: column;
   align-items: flex-start;
   background: #FFFFFF;
-  padding: 10px;
+  padding: 15px 30px 15px 30px;
+  margin: 0px 0px 30px 0px;
   /* /shadow/lg */
-
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
 }
@@ -205,14 +208,14 @@ footer > p {
   color: #5D4696;
 }
 
-.display-work-component > button {
+.display-work-component > a button {
   background-color: #FFFFFF ;
   border: 1px solid #5D4696;
   color: #5D4696;
 }
 
-.display-work-component > image {
-  width: fit-content;
+.display-work-component > img {
+  max-width: 100%;
 }
 
 
@@ -268,6 +271,12 @@ footer > p {
   color: #FF6647;
 }
 
+.lets-talk img{
+  width: 40px;
+  margin-right: 10px;
+
+}
+
 .lets-talk-form  {
   font-family: MontserratMedium;
   color: #FF6647;
@@ -286,7 +295,6 @@ footer > p {
   padding: 13px 17px;
   box-sizing: border-box;
   /* shadow/sm */
-
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
 
 
@@ -297,7 +305,6 @@ footer > p {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-
   background: #FF6647;
   box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.05);
   border-radius: 6px;
