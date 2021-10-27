@@ -22,6 +22,12 @@
 
 /* CSS styling General */
 
+*{
+  margin: 0;
+  padding:0;
+  border: 0;
+}
+
 
 h1 {
   font-family: MontserratBold;
@@ -30,6 +36,7 @@ h1 {
   /* or 83% */
   letter-spacing: 0.1em;
 
+
 }
 
 h2 {
@@ -37,6 +44,7 @@ h2 {
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
+  padding: 20px 0px 15px 0px;
 }
 
 p {
@@ -79,21 +87,38 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 8px;
+  padding: 40px 60px;
   position: relative;
   background: #081B3B;
 }
 
-nav > li {
+nav li {
   color: #65D9FE;
   font-weight: 500;
   font-size: 15px;
   line-height: 25px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+nav a {
+  color: #65D9FE;
+  line-height: 25px;
+  padding-right: 15px;
+  margin-right: 40px;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
+nav a:hover{
+  padding-bottom: 20px;
+  border-bottom: 3px solid #65D9FE ;
+}
+
+
 
 main {
 
@@ -117,6 +142,10 @@ footer {
   padding: 10px;
   font-family: MontserratRegular;
   background: #FAA094;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 30px;
 }
 
 footer >li {
@@ -142,6 +171,19 @@ footer > p {
   align-items: center;
 }
 
+footer a{
+  line-height: 25px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+  text-align: center;
+}
+
+footer div {
+  margin: 20px;
+}
+
 
 
 
@@ -149,7 +191,8 @@ footer > p {
 
 .header-content {
   background: #E5E5E5;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
   box-sizing: border-box;
 }
 
@@ -179,6 +222,13 @@ footer > p {
   color: #FFFFFF;
 }
 
+.the-work a :hover{
+  background: linear-gradient(158.68deg, #5D4696 0%, rgba(171, 170, 214, 0) 295.31%);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: 1px solid  #ABAAD6;
+}
+
+
 
 
 .display-work-component {
@@ -207,6 +257,12 @@ footer > p {
   color: #5D4696;
 }
 
+.display-work-component a button:hover{
+  background: linear-gradient(158.68deg, #ABAAD6 0%, rgba(171, 170, 214, 0) 295.31%);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  color: #FFFFFF;
+}
+
 .display-work-component > img {
   max-width: 100%;
 }
@@ -223,11 +279,25 @@ footer > p {
 
 .about-me > h1{
   color: #008C76;
+  line-height: 35px;
 }
 
 .about-me > p {
   color: #008C76;
 }
+
+.about-me > a button {
+  background-color: #008C76 ;
+  border: 1px solid #008C76;
+  color: #FFFFFF;
+}
+
+.about-me a :hover{
+  background: linear-gradient(158.68deg, #008C76 0%, rgba(171, 170, 214, 0) 295.31%);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: 1px solid  #008C76;
+}
+
 
 .logo-cloud {
   grid-template-columns: [first] auto [second] auto [third] auto;
@@ -312,9 +382,16 @@ footer > p {
   padding: 13px 25px;
 }
 
+.lets-talk-form a button :hover{
+  background: linear-gradient(158.68deg, #FF6647 0%, rgba(171, 170, 214, 0) 295.31%);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: 1px solid  #FF6647;
+}
+
+
 
 .journey {
-
+  margin-bottom: 40px;
 }
 
 .journey > h1 {
@@ -326,7 +403,73 @@ footer > p {
 
 .journey > p {
   color: #E033B3;
+  animation: fadeIn ease 10s;
+
 }
+
+.right-about-box {
+  border-left: 3px solid #E033B3 ;
+  color: #E033B3 ;
+}
+
+.left-about-box {
+  border-right: 3px solid #E033B3 ;
+  color: #E033B3 ;
+  text-align: right;
+}
+
+.fade-in {
+  animation: fadeIn ease 8s;
+  -webkit-animation: fadeIn ease 8s;
+  -moz-animation: fadeIn ease 8s;
+  -o-animation: fadeIn ease 8s;
+  -ms-animation: fadeIn ease 8s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 .achievements {
 
