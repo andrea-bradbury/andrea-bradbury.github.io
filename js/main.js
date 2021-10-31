@@ -1,22 +1,7 @@
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-const navLink = document.querySelectorAll(".nav-link");
-
-
-hamburger.addEventListener("click", mobileMenu);
-navLink.forEach(n => n.addEventListener("click", closeMenu));
-
-function mobileMenu() {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
-}
-
-function closeMenu() {
-  hamburger.classList.remove("active");
-  navMenu.classList.remove("active");
-}
-
-
-/*Desktop functionality*/
-
-
+//hamburger animation
+$("#hamburger").on("click", function(){
+  $(this).toggleClass("hamburger__open");
+  $( ".mainNav" ).toggleClass( "open" );
+  $(".topNavContainer").toggleClass( "nav-display-on" );
+  $("html").toggleClass( "fixed" );
+});
