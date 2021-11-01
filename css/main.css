@@ -380,6 +380,7 @@ footer div {
   align-items: flex-start;
   background: linear-gradient(191.45deg, #9ED9CC 3.14%, rgba(158, 217, 204, 0) 255.97%);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding-bottom: 50px;
 }
 
 .about-me-page > h1{
@@ -394,10 +395,6 @@ footer div {
 
 .about-me-page > img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
-  width: auto;
   background: linear-gradient(191.45deg,#008C76 3.14%, rgba(158, 217, 204, 0) 255.97%);
 
 }
@@ -501,6 +498,8 @@ footer div {
 
 .journey {
   padding-bottom: 50px;
+  background: linear-gradient(191.45deg, #f5daef 3.14%, rgba(158, 217, 204, 0) 255.97%);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .journey > h1 {
@@ -517,21 +516,36 @@ footer div {
 
 }
 
-.right-about-box {
-  margin-bottom: 100px;
-  padding-bottom: 50px;
+.right-about-box{
   border-left: 3px solid #E033B3 ;
   color: #E033B3 ;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #FFFFFF;
+  padding: 15px 30px 15px 30px;
+  margin: 0px 0px 30px 0px;
+  /* /shadow/lg */
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
 
 
 }
 
-.left-about-box {
-  margin-bottom: 100px;
-  padding-bottom: 50px;
+.left-about-box  {
   border-right: 3px solid #E033B3 ;
   color: #E033B3 ;
   text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #FFFFFF;
+  padding: 15px 30px 15px 30px;
+  margin: 0px 0px 30px 0px;
+  /* /shadow/lg */
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
 
 }
 
@@ -588,16 +602,29 @@ footer div {
 }
 
 .achievements {
-  padding-bottom: 50px;
+  padding-bottom: 0px;
 }
 
 .awards {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #FFFFFF;
+  padding: 15px 30px 15px 30px;
+  margin: 0px 0px 30px 0px;
+  /* /shadow/lg */
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
 
 }
 
 .achievements > h1{
   color: #FF6647;
+}
+
+.achievements > p{
+  color: #FF6647;
+  padding-bottom: 20px;
 }
 
 .awards> p{
@@ -719,6 +746,36 @@ footer div {
     margin-right: auto;
   }
 
+  .about-me-page {
+
+  }
+
+
+
+  .journey {
+    text-align: center;
+  }
+
+  .right-about-box {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: auto;
+    max-width: 70%;
+  }
+
+  .left-about-box{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: auto;
+    max-width: 70%;
+  }
+
 
 
   .logo-cloud {
@@ -731,13 +788,28 @@ footer div {
 
   }
 
+  .achievements {
+
+  }
+
+  .achievements-elements {
+    columns: 3;
+    max-height: 300px;
+  }
+
   .achievements h1{
     text-align: center;
   }
-  .awards {
-    column-count: 3;
-    column-gap: 40px;
+
+  .achievements p{
     text-align: center;
+  }
+
+  .awards {
+    text-align: center;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: left ;
   }
 
   .awards img{
@@ -749,6 +821,7 @@ footer div {
   .lets-talk {
     flex-direction: row;
     columns: 2;
+    padding-left: 100px;
   }
 
   .lets-talk h1 {
