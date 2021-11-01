@@ -70,7 +70,6 @@ button {
   flex: none;
   margin: 24px 0px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 13px 25px;
@@ -79,9 +78,6 @@ button {
   border-radius: 4px;
 }
 
-hr {
-  width: 178px;
-}
 
 nav {
   font-family: MontserratMedium;
@@ -100,6 +96,7 @@ form {
   font-family: MontserratRegular;
   font-size: 16px;
   line-height: 24px;
+
 }
 
 
@@ -262,13 +259,9 @@ footer div {
 
 
 .header-content {
-  height: 100px;
   font-family: MontserratMedium;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 50px;
+  padding: 150px 20px;
   position: relative;
 
 }
@@ -292,6 +285,7 @@ footer div {
 
 .the-work > p {
   color: #5D4696 ;
+  padding-bottom: 20px;
 }
 
 
@@ -301,7 +295,7 @@ footer div {
   color: #FFFFFF;
 }
 
-.the-work a :hover{
+.the-work a button:hover{
   background: linear-gradient(158.68deg, #5D4696 0%, rgba(171, 170, 214, 0) 295.31%);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border: 1px solid  #5D4696;
@@ -362,6 +356,9 @@ footer div {
 
 .about-me > p {
   color: #008C76;
+  padding-bottom: 20px;
+
+
 }
 
 .about-me > a button {
@@ -392,6 +389,7 @@ footer div {
 
 .about-me-page > p {
   color: #008C76;
+  padding-bottom: 20px;
 }
 
 .about-me-page > img {
@@ -403,7 +401,6 @@ footer div {
   background: linear-gradient(191.45deg,#008C76 3.14%, rgba(158, 217, 204, 0) 255.97%);
 
 }
-
 
 
 
@@ -441,10 +438,6 @@ footer div {
   color: #FF6647;
 }
 
-.lets-talk > hr {
-  justify-content: left;
-  color: #FF6647;
-}
 
 .lets-talk img{
   width: 40px;
@@ -465,14 +458,17 @@ footer div {
   border: 1px solid #FF6647;
   border-radius: 6px;
   color: #FF6647;
-  align-self: stretch;
-  flex-grow: 0;
   margin: 24px 0px;
   padding: 13px 17px;
   box-sizing: border-box;
   /* shadow/sm */
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
 
+}
+
+#msg {
+  width: 300px;
+  height: 150px;
 
 }
 
@@ -623,6 +619,8 @@ footer div {
 /* Responsive designs for screens over 768px */
 
 @media only screen and (min-width:768px){
+
+
   .header {
     background: #081B3B;
   }
@@ -656,36 +654,47 @@ footer div {
 
 
   .the-work {
-    column-count: 3;
+
   }
 
   .the-work > h1 {
-    column-span: all;
     text-align: center;
   }
 
   .the-work > p {
-    column-span: all;
     text-align: center;
   }
 
-  .the-work > a button {
-    column-span: all;
+  .the-work > a {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+  .work-components {
+    column-count: 3;
+    height: 800px;
+  }
+
+
+
+  .display-work-component {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: left ;
+
+  }
+
+
+  .about-me {
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    width: auto;
-  }
-
-  .display-work-component {
-    display: block;
-    flex-direction: column;
-
-  }
-
-  .about-me {
-
+    width: auto
   }
 
   .about-me > h1 {
@@ -699,22 +708,31 @@ footer div {
 
   .about-me > p {
     text-align: center;
+    display: block;
+
   }
 
-  .about-me > a {
-    display: block;
+  .about-me > a button{
+    display: flex;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    height: auto;
-    width: auto
   }
+
+
 
   .logo-cloud {
-    display: block;
+    display: flex;
+    justify-content: center;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
-    height: auto;
-    width: auto
+
+
+  }
+
+  .achievements h1{
+    text-align: center;
   }
   .awards {
     column-count: 3;
@@ -729,7 +747,8 @@ footer div {
   }
 
   .lets-talk {
-    column-count: 2;
+    flex-direction: row;
+    columns: 2;
   }
 
   .lets-talk h1 {
@@ -739,9 +758,17 @@ footer div {
   .lets-talk p {
     column-span: 1;
   }
-  .lets-talk lets-talk-form {
-    column-span: 2;
+
+  .lets-talk-form {
+    display: inline-block;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    border-left: 2px solid  #FF6647;
+    padding-left: 60px;
+
   }
+
 
 
 
