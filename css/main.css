@@ -395,9 +395,8 @@ footer div {
 }
 
 .about-me-page > img {
-  display: block;
-  background: linear-gradient(191.45deg,#008C76 3.14%, rgba(158, 217, 204, 0) 255.97%);
-
+  height: auto;
+  width: auto;
 }
 
 
