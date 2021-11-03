@@ -89,7 +89,12 @@ main {
 }
 
 section {
-  padding: 15px 45px 15px 45px;
+  padding: 80px 60px 100px 60px;
+}
+
+img {
+  height: auto;
+  width: auto;
 }
 
 form {
@@ -256,15 +261,11 @@ footer div {
   top:0;
 }
 
-
-
 .header-content {
-  font-family: MontserratMedium;
-  display: flex;
-  padding: 150px 20px;
-  position: relative;
-
+  padding-top:100px ;
 }
+
+
 
 .footer-socials img{
   width: 30px;
@@ -276,7 +277,7 @@ footer div {
 .the-work {
   background: linear-gradient(158.68deg, #ABAAD6 0%, rgba(171, 170, 214, 0) 295.31%);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  padding-bottom: 50px;
+
 }
 
 .the-work > h1 {
@@ -346,7 +347,7 @@ footer div {
   align-items: flex-start;
   background: linear-gradient(191.45deg, #9ED9CC 3.14%, rgba(158, 217, 204, 0) 255.97%);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  padding-bottom: 50px;
+
 }
 
 .about-me > h1{
@@ -380,7 +381,7 @@ footer div {
   align-items: flex-start;
   background: linear-gradient(191.45deg, #9ED9CC 3.14%, rgba(158, 217, 204, 0) 255.97%);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  padding-bottom: 50px;
+
 }
 
 .about-me-page > h1{
@@ -424,7 +425,7 @@ footer div {
 
 
 .lets-talk {
-  padding-bottom: 50px;
+
 }
 
 .lets-talk >h1 {
@@ -497,7 +498,6 @@ footer div {
 
 
 .journey {
-  padding-bottom: 50px;
   background: linear-gradient(191.45deg, #f5daef 3.14%, rgba(158, 217, 204, 0) 255.97%);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -536,7 +536,7 @@ footer div {
 .left-about-box  {
   border-right: 3px solid #E033B3 ;
   color: #E033B3 ;
-  text-align: right;
+  text-align: left;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -602,7 +602,7 @@ footer div {
 }
 
 .achievements {
-  padding-bottom: 0px;
+
 }
 
 .awards {
@@ -747,7 +747,13 @@ footer div {
   }
 
   .about-me-page {
+    columns: 2;
 
+  }
+
+  .about-me-page img {
+    display: flex;
+    justify-content: left;
   }
 
 
