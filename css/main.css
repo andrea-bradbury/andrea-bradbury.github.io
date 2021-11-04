@@ -394,9 +394,9 @@ footer div {
   padding-bottom: 20px;
 }
 
-.about-me-image > img {
-  height: auto;
-  width: auto;
+.about-me-image img {
+  height: 600px;
+  width: 600px;
 }
 
 
