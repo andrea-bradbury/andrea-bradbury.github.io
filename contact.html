@@ -33,7 +33,7 @@
 
     <!-- Main Heading Image -->
     <section class="header-content">
-      <h1>Holding Header Image</h1>
+      <img src="img/perth-skyline-continuous-one-line-600w-1863067975.webp" alt="Perth skyline">
     </section>
 
     <section class="lets-talk">
@@ -49,15 +49,20 @@
         <a href="https://github.com/andrea-bradbury" target="_blank"><img src="img/github.png" alt="GitHub"></a>
       </div>
 
-      <form>
+      <form onsubmit="submitForm(form)" name="contactForm" action="" method="get">
         <div class="lets-talk-form">
-          <input type="text" name="first-name" id="first-name" autocomplete="first name" placeholder="First Name" />
-          <input type="text" name="last-name" id="last-name" autocomplete="last name" placeholder="Last Name" />
-          <input type="email" name="email" id="email" autocomplete="email" placeholder="Email Address" />
-          <input type="text" name="msg" id="msg"  placeholder="Write your message here." />
-          <button type="submit">Send</button>
+          <input type="text" name="first-name" id="first-name"  value="" autocomplete="first name" placeholder="First Name" />
+          <input type="text" name="last-name" id="last-name"  value="" autocomplete="last name" placeholder="Last Name" />
+          <input type="email" name="email" id="email"  value="" autocomplete="email" placeholder="Email Address" />
+          <input type="text" name="msg" id="msg"   value="" placeholder="Write your message here." />
+          <button onclick="sendContact();" type="submit">Send</button>
         </div>
+
       </form>
+
+
+
+
     </section>
 
 
@@ -87,6 +92,6 @@
     <p>© 2021 Andrea Bradbury</p>
   </footer>
 
-
+  <script src="js/main.js"></script>
 </body>
 </html>
