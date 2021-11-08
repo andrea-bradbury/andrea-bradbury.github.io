@@ -16,7 +16,7 @@
   <!-- Nav Bar -->
   <header class="header">
     <nav>
-      <a href="index.html" class="logo"><img src="" alt="AB Logo"> </a>
+      <a href="index.html" class="logo"><img src="img/ABTransparent Logo.png" alt="AB Logo"> </a>
 
       <!-- Hamburger menu -->
       <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -38,7 +38,7 @@
   <main>
     <!-- Main Heading Image -->
     <section class="header-content">
-      <h1>Holding Header Image</h1>
+      <img src="img/AB_Logo_icon.png" alt="Andrea Bradbury Logo Animated">
     </section>
 
     <section class="about-me">
@@ -108,6 +108,9 @@
 
 
     <section class="lets-talk">
+      <div class="lets-talk-image">
+        <img src="img/AB_Logo_icon.png" alt="AB logo">
+      </div>
       <div class="lets-talk-text">
         <h1>Let's Talk</h1>
         <p>
@@ -118,17 +121,20 @@
         <br>
         <a href="https://www.linkedin.com/in/andrea-bradbury-6311a493/" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
         <a href="https://github.com/andrea-bradbury" target="_blank"><img src="img/github.png" alt="GitHub"></a>
-      </div>
 
-      <form>
-        <div class="lets-talk-form">
-          <input type="text" name="first-name" id="first-name" autocomplete="first name" placeholder="First Name" />
-          <input type="text" name="last-name" id="last-name" autocomplete="last name" placeholder="Last Name" />
-          <input type="email" name="email" id="email" autocomplete="email" placeholder="Email Address" />
-          <input type="text" name="msg" id="msg"  placeholder="Write your message here." />
-          <button type="submit">Send</button>
-        </div>
-      </form>
+
+        <form onsubmit="submitForm(form)" name="contactForm" action="" method="get">
+          <div class="lets-talk-form">
+            <input type="text" name="first-name" id="first-name"  value="" autocomplete="first name" placeholder="First Name" />
+            <input type="text" name="last-name" id="last-name"  value="" autocomplete="last name" placeholder="Last Name" />
+            <input type="email" name="email" id="email"  value="" autocomplete="email" placeholder="Email Address" />
+            <input type="text" name="msg" id="msg"   value="" placeholder="Write your message here." />
+            <button onclick="sendContact();" type="submit">Send</button>
+          </div>
+
+        </form>
+
+      </div>
     </section>
 
   </main>
