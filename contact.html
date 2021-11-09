@@ -12,7 +12,7 @@
   <!-- Nav Bar -->
   <header class="header">
     <nav>
-      <a href="index.html" class="logo"><img src="img/ABTransparent Logo.png" alt="AB Logo"> </a>
+      <a href="index.html" class="logo"><img src="img/ABTransparentLogo.png" alt="AB Logo"> </a>
 
       <!-- Hamburger menu -->
       <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -33,7 +33,6 @@
 
 
     <section class="lets-talk">
-
       <div class="lets-talk-image">
         <img src="img/AB_Logo_icon.png" alt="AB logo">
       </div>
@@ -49,51 +48,45 @@
         <a href="https://github.com/andrea-bradbury" target="_blank"><img src="img/github.png" alt="GitHub"></a>
 
 
-      <form onsubmit="submitForm(form)" name="contactForm" action="" method="get">
-        <div class="lets-talk-form">
-          <input type="text" name="first-name" id="first-name"  value="" autocomplete="first name" placeholder="First Name" />
-          <input type="text" name="last-name" id="last-name"  value="" autocomplete="last name" placeholder="Last Name" />
-          <input type="email" name="email" id="email"  value="" autocomplete="email" placeholder="Email Address" />
-          <input type="text" name="msg" id="msg"   value="" placeholder="Write your message here." />
-          <button onclick="sendContact();" type="submit">Send</button>
-        </div>
-
-      </form>
-
+        <form  name="contactForm" action="#" method="get">
+          <div class="lets-talk-form">
+            <input type="text" name="first-name" id="first-name"  value=""  placeholder="First Name" />
+            <input type="text" name="last-name" id="last-name"  value="" placeholder="Last Name" />
+            <input type="email" name="email" id="email"  value=""  placeholder="Email Address" />
+            <input type="text" name="msg" id="msg"  value="" placeholder="Write your message here." />
+            <button type="submit">Send</button>
+          </div>
+        </form>
       </div>
-
-
-
-
     </section>
-
-
 
   </main>
 
 
   <footer>
-    <li>
+    <div class="footer-links">
       <ul>
-        <a href="index.html">Home</a>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about-me.html">About Me</a>
+        </li>
+        <li>
+          <a href="the-work.html">The Work</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
       </ul>
-      <ul>
-        <a href="about-me.html">About Me</a>
-      </ul>
-      <ul>
-        <a href="the-work.html">The Work</a>
-      </ul>
-      <ul>
-        <a href="contact.html">Contact</a>
-      </ul>
-    </li>
+    </div>
     <div class="footer-socials">
       <a href="https://www.linkedin.com/in/andrea-bradbury-6311a493/" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
       <a href="https://github.com/andrea-bradbury" target="_blank"><img src="img/github.png" alt="GitHub"></a>
+      <p>© 2021 Andrea Bradbury</p>
     </div>
-    <p>© 2021 Andrea Bradbury</p>
   </footer>
 
-  <script src="js/main.js"></script>
+
 </body>
 </html>
