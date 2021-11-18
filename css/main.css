@@ -154,6 +154,7 @@ footer div {
 }
 .logo img {
   max-height: 70px;
+  width: auto;
 }
 .header .menu {
   padding-right: 10px;
@@ -232,6 +233,7 @@ footer div {
 }
 .header-content img {
   max-height: 300px;
+  width: auto;
   animation: slide-in 20s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
@@ -373,6 +375,7 @@ footer div {
 }
 .display-work-component > img {
   max-width: 100%;
+  height: auto;
 }
 
 /* The Work Page  */
@@ -488,6 +491,7 @@ footer div {
 .logo-cloud > img {
   justify-content: space-between;
   width: calc(100%/8);
+  height: auto;
   align-items: center;
 }
 
@@ -497,6 +501,7 @@ footer div {
 }
 .lets-talk-image img {
   max-height: 300px;
+  width: auto;
   display: flex;
   animation: slide-in 20s;
   justify-content: space-between;
@@ -730,6 +735,7 @@ footer div {
   /* Nav for Desktop  */
   .logo img{
     max-height: 40px;
+    width: auto;
   }
   .header {
     background: #081B3B;
@@ -774,6 +780,8 @@ footer div {
   }
   .header-content-image img {
     justify-content: space-between;
+    height: auto;
+    width: auto;
 
   }
 
@@ -908,6 +916,7 @@ footer div {
   .logo-cloud > img {
     margin-right: 10px ;
     width: calc(100%/8);
+    height: auto;
     justify-content: space-between;
   }
 
@@ -934,6 +943,8 @@ footer div {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    height: auto;
+    width: auto;
   }
 
   .lets-talk {
@@ -946,6 +957,7 @@ footer div {
   }
   .lets-talk-image img {
     max-height: 350px;
+    width: auto;
     justify-content: space-between;
   }
   .lets-talk-text {
