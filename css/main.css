@@ -146,14 +146,13 @@ footer div {
   border-left: 8px solid #65D5FE;
 }
 .header .logo {
-  display: block;
-  float: left;
+  position: absolute;
   font-size: 2em;
-  padding: 10px 20px;
   text-decoration: none;
 }
 .logo img {
-  max-height: 70px;
+  position: absolute;
+  height: 300px;
   width: auto;
 }
 .header .menu {
