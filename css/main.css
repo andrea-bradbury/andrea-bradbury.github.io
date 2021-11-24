@@ -30,7 +30,7 @@
 h1 {
   font-family: MontserratBold;
   font-size: 36px;
-  line-height: 30px;
+  line-height: 40px;
   letter-spacing: 0.1em;
 
 }
@@ -87,7 +87,7 @@ footer {
 }
 footer li {
   color: #FFDDE2;
-  font-size: 10px;
+  font-size: 14px;
   list-style: none;
   text-decoration: none;
 
@@ -101,15 +101,15 @@ footer ul {
 footer p a{
   color: #FFDDE2;
   line-height: 16px;
-  font-size: 10px;
+  font-size: 14px;
   text-decoration: none;
 
 }
 footer a{
   color: #FFDDE2;
-  font-size: 10px;
+  font-size: 14px;
   margin-right: 10px;
-  line-height: 16px;
+  line-height: 20px;
   text-decoration: none;
 }
 footer div {
@@ -134,11 +134,13 @@ footer div {
   list-style: none;
   overflow: hidden;
   background-color: #fff;
+
 }
 .header li a {
   display: block;
   padding: 20px 20px;
   text-decoration: none;
+  color: #081B3B;
 }
 .header li a:hover,
 .header .menu-btn:hover {
@@ -288,7 +290,7 @@ footer div {
 }
 .footer-socials p {
   color: #FFDDE2;
-  font-size: 10px;
+  font-size: 14px;
   justify-content: space-between;
 }
 .footer-links {
@@ -340,7 +342,7 @@ footer div {
   flex-direction: column;
   align-items: flex-start;
   background: #FFFFFF;
-  padding: 15px 30px 15px 30px;
+  padding: 30px 30px 15px 30px;
   margin: 0px 0px 30px 0px;
   /* /shadow/lg */
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -462,7 +464,7 @@ footer div {
 }
 .about-me-text > p {
   color: #008C76;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 .about-me-image img {
   margin-top: 30px;
@@ -474,24 +476,25 @@ footer div {
 
 /* Who Ive Worked With Section  */
 .logo-cloud {
+  padding: 0px 0px 0px 0px;
+}
+
+.logo-cloud-div {
   padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   background-color: #F9FAFB ;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 8px;
   display: flex;
   flex-direction: row;
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
-  width: auto;
-  align-items: center;
 
 }
-.logo-cloud > img {
-  justify-content: space-between;
-  width: calc(100%/8);
+.logo-cloud img {
+  display: flex;
+  flex-direction: row;
+  max-width: calc(100%/4);
   height: auto;
-  align-items: center;
 }
 
 /* Contact Section and Page  */
@@ -713,7 +716,7 @@ footer div {
 }
 .achievements p{
   color: #FF6647;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   text-decoration: none;
 }
 .awards p a{
@@ -748,6 +751,10 @@ footer div {
     padding: 20px 30px;
     color: #65D5FE;
   }
+  #current-page {
+    color: #FFFFFF;
+  }
+
   .header li a:hover,
   .header .menu-btn:hover {
     background-color:#081B3B ;
@@ -906,25 +913,33 @@ footer div {
     max-width: 70%;
   }
 
-  .logo-cloud {
-    display: flex;
+  .logo-cloud-div {
+    padding:10px;
+    margin-bottom: 15px;
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
     max-width: 70%;
 
   }
-  .logo-cloud > img {
+  .logo-cloud  img {
     margin-right: 10px ;
-    width: calc(100%/8);
+    width: calc(100%/5);
     height: auto;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+
   }
 
   .achievements {
-
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
   }
   .achievements-elements {
+    padding-top: 30px;
     columns: 3;
     max-height: 300px;
   }
