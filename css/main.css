@@ -914,6 +914,7 @@ footer div {
   }
 
   .logo-cloud-div {
+
     padding:10px;
     margin-bottom: 15px;
     flex-direction: row;
@@ -923,11 +924,12 @@ footer div {
 
   }
   .logo-cloud  img {
+    justify-content: space-between;
     margin-right: 10px ;
     width: calc(100%/5);
     height: auto;
     align-items: center;
-    justify-content: center;
+
 
   }
 
